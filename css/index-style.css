@@ -1,0 +1,429 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*      NAVIGATION      */
+
+.wide-nav-item {
+    display: none;
+    transition: transform 0.5s cubic-bezier(0,.72,.67,1.32);
+}
+
+.wide-close-menu-icon {
+    width: 50px;
+    position: absolute;
+    left: -135px;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background-color: white;  
+    box-shadow: 0px 1px 5px black;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1000;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.reservations {
+    display: none;
+}
+
+.restaurants,
+.ventures {
+    width: 34%;
+}
+
+.restaurants:hover,
+.ventures:hover,
+.our-company:hover {
+    background-color: #F0F0F0;
+}
+
+.home,
+.restaurants,
+.ventures {
+    border-right: solid 1px darkgray;
+}
+.mobile-nav-icon {
+    height: 25px;
+}
+
+.three-line {
+    height: 30px;
+    width: 45px;
+}
+
+/*      BODY         */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-item-container {
+    width: 100%;
+    margin-top: 2px;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*  GALLERY ITEM INFO */
+.gallery-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    color:  white;
+    font-weight: 600;
+    /* background-color: black; */
+    justify-content: flex-end;
+}
+
+.gal-inf-c1 {
+    background-color: black;
+}
+
+/* .gal-inf-c3 {
+    height: 200px;
+}
+
+.gal-inf-c4 {
+    height: 275px;
+}
+.gal-inf-c5,
+.gal-inf-c6 {
+    height: 140px;
+} */
+
+.gallery-title {
+    font-size: 32px;
+    margin-top: 2px;
+    padding-left: 20px;
+}
+
+.squiggly-icon {
+    -webkit-filter: invert(100%);
+    width: 70px;
+    height: 40px;
+    margin-top: -24px;
+    padding-left: 20px;
+}
+
+.gallery-info {
+    margin-top: 0;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.gal-item-c1 {
+    height: 570px;
+    margin-top: 0px;
+}
+
+.feat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.img-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-property: box-shadow, background;
+    transition-duration: 0.3s;
+}
+.gallery-item-container:hover .img-overlay{
+    box-shadow: inset 0 0 0 10px white;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.gal-inf-c3  h2 {
+    font-size: 30px;
+}
+
+.gal-inf-c4  h2 {
+    font-size: 30px;
+}
+/*      SLIDE MENU      */
+.mobile-drop-menu {
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 65px;
+    overflow-x: hidden;
+    transition: height 0.3s 0s, opacity;
+    /* background-color: black; */
+    background-image: url("../images/bg_submenu.jpg");
+}
+.menu-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.menu-content .res-link {
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    background-color: lightgray;
+    color: black;
+    height: 50px;
+}
+
+.close-menu-icon {
+    position: absolute;
+    height: 30px;
+    opacity: 0;
+}
+
+.close-menu-icon,
+.three-line {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.menu-squiggly-icon {
+    -webkit-filter: invert(100%);
+    width: 50px;
+    height: 25px;
+    margin-top: -10px;
+}
+
+.sub-menu-container {
+    padding-top: 10px;
+    display: flex;
+    color: lightgrey;
+    align-items: center;
+}
+
+.sub-menu-container p {
+    padding: 0 10px;
+    margin-top: -2px;
+}
+
+.submenu-media-img-container {
+    display: flex;
+}
+.submenu-social-media-img {
+    height: 20px;
+    -webkit-filter: invert(100%);
+    padding: 0 15px;
+}
+
+/*      WIDE SLIDE MENU      */
+.desktop-slide-menu {
+    opacity: 0;
+    height: 100%;
+    width: 310px;
+    position: fixed;
+    z-index: 2;
+    left: -110px;
+    top: 0;
+    transition: transform 0.5s 0s, opacity;
+    transition-timing-function: cubic-bezier(.04,.79,.57,1.1);
+    background-image: url("../images/bg_submenu.jpg");
+}
+
+.desktop-company-menu-content {
+    align-items: flex-start;
+    font-size: 12px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.desktop-company-menu-content  a {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sub-menu-container a {
+    font-size: 12px;
+    color: lightgrey;
+}
+
+
+/*      MEDIA QUERIES     */
+
+@media (min-width: 565px) { 
+    .gal-inf-c3 {
+        height: 150px;
+    }
+    .gal-inf-c4 {
+        height: 225px;
+    }
+}
+
+/*      MEDIUM SCREEN     */
+@media (min-width: 765px) { 
+
+    /*      NAV      */
+    .nav {
+        flex-direction: column;
+        max-width: 200px;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .mobile-nav-icon {
+        display: none;
+    }
+    .item-title {
+        display: none;
+    }
+    /* Show wide nav UI */
+    .wide-nav-item {
+        display:flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .nav-item {
+        border-right: none;
+        border-bottom: solid 1px darkgray;
+    }
+    .reservations {
+        display: flex;
+    }
+    .home {
+        order: -3;
+    }
+    .restaurants {
+        order: -2;
+    }
+    .our-company {
+        order: -1;
+    }
+    .nav-item {
+        width: 100%;
+        height: 18%;
+    }
+    .home,
+    .reservations {
+        height: 23%;
+    }
+    .main-logo {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -25px;
+    }
+    .media-img-container {
+        display: flex;
+        margin-top: 5px;
+    }
+    .social-media-img,
+    .clock-img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+    .social-media-img:hover {
+        opacity: 0.4;
+    }
+    .reservation-title-img-container {
+        display: flex;
+        align-items: center;
+    }
+    .reservation-title-img-container:hover {
+        opacity: 0.4;
+    }
+    .single-squigly {
+        width: 35px;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: block;
+    }
+    .reservations-item-container {
+        display: block;
+    }
+    /*      GALLERY      */
+    .gallery-container {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+    .gallery-item-container {
+        height: 375px;
+    }
+    .gal-item-c1 {
+        height: 620px;
+    }
+    .gallery-title {
+        font-size: 38px;
+    }
+    .gal-inf-c1,
+    .gal-inf-c2,
+    .gal-inf-c6 {
+        height: 160px
+    }
+
+    /*      SLIDE MENU      */
+    .mobile-drop-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        left: 200px;
+        top: 0;
+    }
+}
+
+/*      LARGE SCREEN     */
+@media (min-width: 1025px) {
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item-container {
+        width: calc(50% - 1px);
+    }
+    .gal-item-c1 {
+        width: 100%;
+    }
+
+    .gal-item-c3,
+    .gal-item-c5 {
+        padding-left: 2px;
+    }
+    .gal-inf-c3 {
+        height: 180px;
+    }
+    .gal-inf-c4 {
+        height: 275px;
+    }
+    .gal-inf-c5 {
+        height: 165px;
+    }
+ }
+

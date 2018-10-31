@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Momofuku</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+	<div class="nav">
+        <div class="nav-item home" onclick="location.href='index.html'">
+            <img class="mobile-nav-icon" src="images/peach.png">
+            <div class="wide-nav-item">
+                    <img class="wide-nav-image main-logo" src="https://momofuku.com/wp-content/themes/momofuku/img/momo-group.svg">
+                </div>
+        </div>
+        <div class="nav-item restaurants" onclick="location.href='restaurants.html'">
+            <h4 class="item-title">Restaurants</h2>
+            <div class="wide-nav-item">
+                <img class="wide-nav-image bowl-icon" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/bol.svg">
+                <p>our restaurants</p>
+            </div>
+        </div>
+        <div class="nav-item ventures">
+            <h4 class="item-title">Ventures</h2>
+            <div class="wide-nav-item">
+                <img class="wide-nav-image box-icon" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/box.svg">
+                <p>other ventures</p>
+            </div>
+        </div>
+        <div class="nav-item our-company" id="menu-toggle-container">
+            <img class="mobile-nav-icon three-line" id="open-menu" src="images/3line.png">
+            <img class="mobile-nav-icon close-menu-icon" id="close-menu" src="images/x.png">
+            <div class="wide-nav-item our-company-wide">
+                <img class="wide-nav-image 3-squigly" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/menu.svg">
+                <p>our company</p>
+                <img class="wide-close-menu-icon"src="images/x.png">
+            </div>
+        </div>
+        <div class="nav-item reservations">
+            <div class="wide-nav-item reservations-item-container">
+                <div class="media-img-container">
+                    <img class="social-media-img twitter" src="images/twitter.png" onclick="location.href='https://twitter.com/momofuku'">
+                    <img class="social-media-img facebook" src="images/facebook.png" onclick="location.href='https://www.facebook.com/luckypeach'">
+                    <img class="social-media-img insta" src="images/insta.png" onclick="location.href='https://www.instagram.com/momolongplay/'">
+                    <img class="social-media-img tumbler" src="images/tumbler.svg" onclick="location.href='http://momofuku.tumblr.com/'">
+                </div>
+                <img class="wide-nav-image single-squigly" src="images/squiggly.png">
+                <div class="reservation-title-img-container">
+                    <img class="wide-nav-image clock-img" src="images/clock.png">
+                    <p class="reservation-paragraph">reservations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-drop-menu" id="mobile-drop-menu">
+        <div class="menu-content">
+            <a href="#" class="res-link">reservations</a>
+            <a href="#" class="about-link">about us + team</a>
+            <a href="#" class="priv-dining-link">private dining + catering</a>
+            <a href="#" class="careers-link">careers</a>
+            <a href="#" class="press-link">press</a>
+            <a href="#" class="friends-link">friends + partners</a>
+            <a href="#" class="market-link">market</a>
+            <a href="#" class="gift-link">gift cards</a>
+            <a href="#" class="contact-link">contact</a>
+            <img class="menu-squiggly-icon" src="images/squiggly.png">
+            <div class=sub-menu-container>
+                <a href="#">privacy policy</a>
+                <p>|</p>
+                <a href="#">terms of use</a>
+            </div>
+            <div class="submenu-media-img-container">
+                <img class="submenu-social-media-img" src="images/twitter.png" onclick="location.href='https://twitter.com/momofuku'">
+                <img class="submenu-social-media-img" src="images/facebook.png" onclick="location.href='https://www.facebook.com/luckypeach'">
+                <img class="submenu-social-media-img" src="images/insta.png" onclick="location.href='https://www.instagram.com/momolongplay/'">
+                <img class="submenu-social-media-img" src="images/tumbler.svg" onclick="location.href='http://momofuku.tumblr.com/'">
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop-slide-menu" id="desktop-slide-menu">
+        <div class="menu-content desktop-company-menu-content">
+            <a href="#" class="about-link">about us + team</a>
+            <a href="#" class="priv-dining-link">private dining + catering</a>
+            <a href="#" class="careers-link">careers</a>
+            <a href="#" class="press-link">press</a>
+            <a href="#" class="friends-link">friends + partners</a>
+            <a href="#" class="market-link">market</a>
+            <a href="#" class="gift-link">gift cards</a>
+            <a href="#" class="contact-link">contact</a>
+            <div class=sub-menu-container>
+                <a href="#">privacy policy</a>
+                <p>|</p>
+                <a href="#">terms of use</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item-container gal-item-c1">
+            <img class="feat-img fimg1" src="images/kojin.jpg">
+            <div class="gallery-info-container gal-inf-c1">
+                <h2 class="gallery-title">K&#x14d;JIN</h2>
+                <img class="squiggly-icon" src="images/squiggly.png">
+                <p class="gallery-info">Now open on the third floor of Momofuku Toronto.</p>
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+        <div class="gallery-item-container gal-item-c2">
+            <img class="feat-img fimg2" src="images/ssam-sauce.png">
+             <div class="gallery-info-container gal-inf-c2">
+                 <h2 class="gallery-title">SS&#xc4;M SAUCE</h2>
+                 <img class="squiggly-icon" src="images/squiggly.png">
+                 <p class="gallery-info">Ss&#xe4;m Sauce is now available nationwide.</p>
+             </div>
+             <div class="img-overlay"></div>
+        </div>
+        <div class="gallery-item-container gal-item-c3">
+            <img class="feat-img fimg3" src="images/spicy-cucumber.jpg">
+            <div class="gallery-info-container gal-inf-c3">
+                <h2 class="gallery-title">PRIVATE DINING &amp; CATERING</h2>
+                <img class="squiggly-icon" src="images/squiggly.png">
+                <p class="gallery-info">Learn more about options in NYC, Sydney, Toronto, D.C., and Las Vegas</p>
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+        <div class="gallery-item-container gal-item-c4">
+            <img class="feat-img fimg4" src="images/noodles.jpg">
+            <div class="gallery-info-container gal-inf-c4">
+                <h2 class="gallery-title">COMING SOON: NOODLE BAR AND B&#x100;NG BAR AT THE SHOPS AT COLUMBUS CIRCLE</h2>
+                <img class="squiggly-icon" src="images/squiggly.png">
+                <p class="gallery-info">Sign up for our newsletter to get updates on these and other upcoming projects.</p>
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+        <div class="gallery-item-container gal-item-c5">
+            <img class="feat-img fimg5" src="images/kitchen.jpg">
+            <div class="gallery-info-container gal-inf-c5">
+                 <h2 class="gallery-title">COME WORK WITH US!</h2>
+                 <img class="squiggly-icon" src="images/squiggly.png">
+                 <p class="gallery-info">Apply now for positions in LA, NY, DC, Las Vegas, Sydney, and Toronto.</p>
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+        <div class="gallery-item-container gal-item-c6">
+            <img class="feat-img fimg6" src="images/milk-bar.jpg">
+            <div class="gallery-info-container gal-inf-c6">
+                 <h2 class="gallery-title">MILK BAR</h2>
+                 <img class="squiggly-icon" src="images/squiggly.png">
+                 <p class="gallery-info">Milk Bar is a bakery from chef and owner Christina Tosi. They make cookies, cakes, pies, and more.</p>
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

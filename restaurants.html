@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Momofuku</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/restaurants-style.css">
+</head>
+<body>
+	<div class="nav">
+        <div class="nav-item home" onclick="location.href='index.html'">
+            <img class="mobile-nav-icon" src="images/peach.png">
+            <div class="wide-nav-item">
+                    <img class="wide-nav-image main-logo" src="https://momofuku.com/wp-content/themes/momofuku/img/momo-group.svg">
+                </div>
+        </div>
+        <div class="nav-item restaurants">
+            <h4 class="item-title">Restaurants</h2>
+            <div class="wide-nav-item">
+                <img class="wide-nav-image bowl-icon" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/bol.svg">
+                <p>our restaurants</p>
+            </div>
+        </div>
+        <div class="nav-item ventures">
+            <h4 class="item-title">Ventures</h2>
+            <div class="wide-nav-item">
+                <img class="wide-nav-image box-icon" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/box.svg">
+                <p>other ventures</p>
+            </div>
+        </div>
+        <div class="nav-item our-company" id="menu-toggle-container">
+            <img class="mobile-nav-icon three-line" id="open-menu" src="images/3line.png">
+            <img class="mobile-nav-icon close-menu-icon" id="close-menu" src="images/x.png">
+            <div class="wide-nav-item our-company-wide">
+                <img class="wide-nav-image 3-squigly" src="https://momofuku.com/wp-content/themes/momofuku/img/svg/menu.svg">
+                <p>our company</p>
+                <img class="wide-close-menu-icon"src="images/x.png">
+            </div>
+        </div>
+        <div class="nav-item reservations">
+            <div class="wide-nav-item reservations-item-container">
+                <div class="media-img-container">
+                    <img class="social-media-img twitter" src="images/twitter.png" onclick="location.href='https://twitter.com/momofuku'">
+                    <img class="social-media-img facebook" src="images/facebook.png" onclick="location.href='https://www.facebook.com/luckypeach'">
+                    <img class="social-media-img insta" src="images/insta.png" onclick="location.href='https://www.instagram.com/momolongplay/'">
+                    <img class="social-media-img tumbler" src="images/tumbler.svg" onclick="location.href='http://momofuku.tumblr.com/'">
+                </div>
+                <img class="wide-nav-image single-squigly" src="images/squiggly.png">
+                <div class="reservation-title-img-container">
+                    <img class="wide-nav-image clock-img" src="images/clock.png">
+                    <p class="reservation-paragraph">reservations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-drop-menu" id="mobile-drop-menu">
+        <div class="menu-content">
+            <a href="#" class="res-link">reservations</a>
+            <a href="#" class="about-link">about us + team</a>
+            <a href="#" class="priv-dining-link">private dining + catering</a>
+            <a href="#" class="careers-link">careers</a>
+            <a href="#" class="press-link">press</a>
+            <a href="#" class="friends-link">friends + partners</a>
+            <a href="#" class="market-link">market</a>
+            <a href="#" class="gift-link">gift cards</a>
+            <a href="#" class="contact-link">contact</a>
+            <img class="menu-squiggly-icon" src="images/squiggly.png">
+            <div class=sub-menu-container>
+                <a href="#">privacy policy</a>
+                <p>|</p>
+                <a href="#">terms of use</a>
+            </div>
+            <div class="submenu-media-img-container">
+                <img class="submenu-social-media-img" src="images/twitter.png" onclick="location.href='https://twitter.com/momofuku'">
+                <img class="submenu-social-media-img" src="images/facebook.png" onclick="location.href='https://www.facebook.com/luckypeach'">
+                <img class="submenu-social-media-img" src="images/insta.png" onclick="location.href='https://www.instagram.com/momolongplay/'">
+                <img class="submenu-social-media-img" src="images/tumbler.svg" onclick="location.href='http://momofuku.tumblr.com/'">
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop-slide-menu" id="desktop-slide-menu">
+        <div class="menu-content desktop-company-menu-content">
+            <a href="#" class="about-link">about us + team</a>
+            <a href="#" class="priv-dining-link">private dining + catering</a>
+            <a href="#" class="careers-link">careers</a>
+            <a href="#" class="press-link">press</a>
+            <a href="#" class="friends-link">friends + partners</a>
+            <a href="#" class="market-link">market</a>
+            <a href="#" class="gift-link">gift cards</a>
+            <a href="#" class="contact-link">contact</a>
+            <div class=sub-menu-container>
+                <a href="#">privacy policy</a>
+                <p>|</p>
+                <a href="#">terms of use</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-restaurants-drop-container">
+        <div class="rest-drop-label-container">Our Restaurants</div>
+        <div class="arrow-img-container">
+             <img class="drop-img" src="images/dropdown.svg">
+        </div>
+        <div class="by-concept-container">By Concept
+            <img class="concept-squiggly-icon" src="images/squiggly.png">
+        </div>
+
+        <div class="by-location-container">By Location</div>
+    </div>
+
+    <div class="restaurant-gallery-container">
+        <div class="restaurant-item-container restaurant-item-c1">
+            <img class="restaurant-img" src="images/restaurants/noodle-bar.jpeg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c1">
+                <h2 class="restaurant-title">Noodle Bar NY</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Momofuku Noodle Bar was the first Momofuku restaurant. It serves ramen and a roster of dishes that changes with the seasons.</p>
+                <div class=restaurant-location-container>New York</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c2">
+            <img class="restaurant-img" src="images/restaurants/ssam-bar.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c2">
+                <h2 class="restaurant-title">Ss&#xe4;m Bar</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Momofuku Ss&#xe4;m Bar serves an inventive menu that is always evolving. Serving dinner, lunch and also offers brunch on weekends.</p>
+                <div class=restaurant-location-container>New York</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c3">
+            <img class="restaurant-img" src="images/restaurants/ko-counter.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c3">
+                <h2 class="restaurant-title">Ko</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Momofuku Ko (which means "son of") serves a set multi-course tasting menu. Ko uses seasonal ingredients, and changes its menu frequently.</p>
+                <div class=restaurant-location-container>New York</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c4">
+            <img class="restaurant-img" src="images/restaurants/fuku.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c4">
+                <h2 class="restaurant-title">Fuku</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Fuku is Momofukus's version of a fried chicken sandwich shop.</p>
+                <div class=restaurant-location-container>New York</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c5">
+            <img class="restaurant-img" src="images/restaurants/nishi.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c5">
+                <h2 class="restaurant-title">Nishi</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info"></p>
+                <div class=restaurant-location-container>New York</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c6">
+            <img class="restaurant-img" src="images/restaurants/ccdc.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c6">
+                <h2 class="restaurant-title">CCDC</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Momofuku CCDC serves a roster of dishes that change with the seasons.</p>
+                <div class=restaurant-location-container>Washington D.C.</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c7">
+            <img class="restaurant-img" src="images/restaurants/momo-vegas.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c7">
+                <h2 class="restaurant-title">Las Vegas</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Inventive American Asian cuisine from Chef David Chang</p>
+                <div class=restaurant-location-container>Las Vegas</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c8">
+            <img class="restaurant-img" src="images/restaurants/majordomo.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c8">
+                <h2 class="restaurant-title">Majord&#x14d;mo</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Majord&#x14d;mo is a California restaurant from Momofuku.</p>
+                <div class=restaurant-location-container>Los Angeles</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c9">
+            <img class="restaurant-img" src="images/restaurants/seiobo.png">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c9">
+                <h2 class="restaurant-title">Sei&#x14d;bo</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Sei&#x14d;bo serves a multi-course tasting menu inspired by the bounty of Australian ingredients and the diverse backgrounds of the culinary team.</p>
+                <div class=restaurant-location-container>Sydney</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c10">
+            <img class="restaurant-img" src="images/restaurants/noodle-bar-toronto.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c10">
+                <h2 class="restaurant-title">Noodle Bar Toronto</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Noodle Bar is a sister-restaurant to the restaurant of the same name in New York City.</p>
+                <div class=restaurant-location-container>Toronto</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c11">
+            <img class="restaurant-img" src="images/restaurants/milkb.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c11">
+                <h2 class="restaurant-title">Milk Bar</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">Milk Bar</p>
+                <div class=restaurant-location-container>Visit Milk Bar</div>
+            </div>
+        </div>
+        <div class="restaurant-item-container restaurant-item-c12">
+            <img class="restaurant-img" src="images/restaurants/kojin.jpg">
+            <p class=top-restaurant-label>&bull;Restaurant&bull;</p>
+            <div class="restaurant-info-container restaurant-inf-c12">
+                <h2 class="restaurant-title">K&#x14d;jin</h2>
+                <img class="restaurant-squiggly-icon" src="images/squiggly.png">
+                <p class="restaurant-gallery-info">K&#x14d;jin.</p>
+                <div class=restaurant-location-container>Toronto</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
